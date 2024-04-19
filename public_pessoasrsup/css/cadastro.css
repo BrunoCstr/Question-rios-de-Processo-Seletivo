@@ -1,0 +1,167 @@
+@font-face {
+  font-family: Prometo;
+  src: url('../font/Prometo.ttf');
+  src: url('../font/Prometo.eot');
+  src: url('../font/Prometo.woff');
+}
+
+#preloader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  overflow: hidden;
+}
+
+.preloader-logo {
+  z-index: 10000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay-preloader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: block;
+  background-color: #424242;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+
+body,
+html {
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Prometo;
+}
+
+h1, label, button {
+  font-family: Prometo;
+  color: white;
+}
+
+select {
+  color: white;
+}
+
+select:focus,
+select:active {
+  color: black;
+}
+
+
+.container-login {
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  border: solid 1px;
+
+  backdrop-filter: blur(10px);
+}
+
+#inputUnidade {
+  width: 100%;
+}
+
+.form {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 65%;
+}
+
+#inputNome, #inputEmail {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: none;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  font-size: 15px;
+}
+
+#inputUnidade {
+  height: 38px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #9b9b9b;
+}
+
+select {
+  outline: none;
+}
+
+#inputNome:hover, #inputEmail:hover,
+#inputUnidade:hover {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid;
+
+  border-image-slice: 1;
+  border-width: 2px;
+  border-style: transparent;
+}
+
+.index-button {
+  background-color: #2760ff;
+  border: 1px none #2760ff;
+  border-radius: 6px;
+  color: white;
+  padding: 12px 30px;
+  font-size: 15px;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  font-family: Prometo, sans-serif;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover {
+  background-color: deepskyblue;
+  box-shadow: 3px 3px 0px 0px #2980b9;
+  transform: translateY(2px);
+}
+
+#msgSuccess {
+  text-align: center;
+  color: #00bb00;
+}
+
+#msgError {
+  text-align: center;
+  color: #ff0000;
+}
+
+/*Responsividade*/
+
+/*container-login*/
+
+@media screen and (max-width: 350px) {
+  .container-login {
+    height: 440px;
+    font-size: 15px;
+  }
+
+  .index-button{
+    padding: 10px 15px
+  }
+}

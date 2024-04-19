@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Resultados</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-firestore.js"></script>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            background: linear-gradient(140deg, #002794, black , #ff3d00);
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-blur">
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 id="modal-header-text">Área Restrita</h1>
+                </div>
+                <div class="modal-body">
+                    <p id="password-advise">Digite a senha e pressione ENTER</p>
+                    <label>Senha: <input id="senha-modal" type="password"></label>
+                </div>
+            </div>
+        </div>
+        <div id="background-data" class="is-blurred">
+            <div class="header">
+                <h1 id="titulo-resultados" style="color:white">Resultados</h1>
+                <a href="index.html"><img class="logo-resultados" src="images/logo-branca.png" width="120px"></a>
+                <a href="crud.html"><img class="crud-logo" src="images/gerenciamento-de-unidade.svg" width="40px"></a>
+            </div>
+            <br>
+            <div class="row">
+                <div class="column" id="tabela_comportamental">
+                    <!-- Conteúdo da tabela comportamental aqui -->
+                </div>
+                <div class="column" id="tabela_tipologico">
+                    <!-- Conteúdo da tabela tipológica aqui -->
+                </div>
+            </div>
+            <div class="containerbtn">
+                <button class="navigation-button" onclick="previousPage()">Anterior</button>
+                <button class="navigation-button" onclick="nextPage()">Próxima</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/resultados.js"></script>
+</body>
+
+</html>

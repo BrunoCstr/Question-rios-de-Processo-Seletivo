@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Questionário de Avaliação Tipológica</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="manifest" href="images/site.webmanifest">
+	<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="theme-color" content="#ffffff">
+
+</head>
+
+<style>
+	body {
+		margin: 0;
+		padding: 0;
+		background-image: url('images/Fundo_do_CRUD.jpg');
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		position: relative;
+	}
+
+	.overlay {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.6);
+		z-index: -1;
+	}
+</style>
+
+<body>
+	<div class="overlay-preloader"></div>
+	<div class="preloader">
+		<div class="preloader-logo">
+			<svg id="asas-rsup" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+				width="100" height="80" viewBox="0 -50 1910.909 1732.49">
+				<defs>
+					<linearGradient id="linear-gradient" x1="1.275" y1="-1.232" x2="0" y2="1"
+						gradientUnits="objectBoundingBox">
+						<stop offset="0" stop-color="#0077c8" />
+						<stop offset="0.502" stop-color="#00a9e0" />
+						<stop offset="1" stop-color="#5bc2e7" />
+					</linearGradient>
+				</defs>
+				<g id="Group_7" data-name="Group 7" style="isolation: isolate">
+					<path id="Path_1" data-name="Path 1"
+						d="M451.163,1181.173A172.331,172.331,0,0,1,278.832,1353.5H139.447A139.416,139.416,0,0,0,.031,1492.92v139.57H172.362c154.08,0,278.985-124.907,278.985-278.986h-.185a172.331,172.331,0,0,1,172.33-172.331L730,1181.162c290.31,0,556.154-104.757,761.791-278.532L730,902.336c-154,0-278.837,124.84-278.837,278.837"
+						stroke="url(#linear-gradient)" fill="none" stroke-width="40" />
+					<path id="Path_2" data-name="Path 2"
+						d="M451.174,727.432c-.869,96.2-76.847,174.9-173.05,174.9H139.447A139.416,139.416,0,0,0,.031,1041.753L0,1181.322H172.2c154.08,0,278.985-124.907,278.985-278.986l-.024.294A172.331,172.331,0,0,1,623.492,730.3l779.964-.107c181.685-.024,347.013-108.044,416.943-275.731q.63-1.508,1.254-3.018L730,451.168c-153.139,0-277.444,123.451-278.826,276.264"
+						stroke="url(#linear-gradient)" fill="none" stroke-width="40" />
+					<path id="Path_3" data-name="Path 3"
+						d="M730,0C576.861,0,452.556,123.451,451.174,276.264c-.869,96.2-76.847,174.9-173.05,174.9H139.447A139.415,139.415,0,0,0,.031,590.584L0,730.154H172.2c154.08,0,278.985-124.907,278.985-278.986h-.024a172.331,172.331,0,0,1,172.33-172.331l1009.322,0c152.656,0,277.728-123.052,278.092-275.707q0-1.438,0-2.878Z"
+						stroke="url(#linear-gradient)" fill="none" stroke-width="40" />
+				</g>
+			</svg>
+		</div>
+	</div>
+	<div class="overlay"></div>
+	<div class="container-form-tipologico">
+		</form>
+		<div id="targetDiv">
+			<br>
+			<h1 class="h1-title-tipologico" style="font-family: prometo;">Questionário de Avaliação Tipológica</h1>
+			<img class="logo-tipologico" src="images/logo-branca-azul.png" width="150px">
+			<br>
+			<div class="form-texto-tipologico">
+				<form name="form1">
+					<br>1) Se você tem algo importante (mas não urgente) para dizer a um colega que trabalha em outra
+					cidade,
+					você prefere se expressar:
+					<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="a1" required /> A) Por escrito</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="e" id="b1" /> B) Por telefone</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form2">
+					<br>2) Ao participar de uma festa ou outro evento social, você:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="e" id="a2" required /> A) Costuma conversar com várias
+						pessoas,
+						incluindo desconhecidos</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="b2" /> B) Prefere conversar com poucas pessoas,
+						já
+						conhecidas</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form3">
+					<br>3) Você costuma ferir os sentimentos alheios sem perceber?<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="f" id="a3" required /> A) Nunca ou muito
+						raramente</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="t" id="b3" /> B) De vez em quando</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form4">
+					<br>4) Ao ler um livro, você prefere:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="n" id="a4" required /> A) O estilo literário, cheio de
+						frases
+						de efeito
+						e metáforas</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="s" id="b4" /> B) O estilo jornalístico, com frases
+						mais
+						simples e descrições mais próximas da realidade</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form5">
+					<br>5) Você sente prazer em:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="n" id="a5" required /> A) Discutir um assunto a fundo
+						até
+						que
+						sua
+						opinião prevaleça</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="s" id="b5" /> B) Chegar a um consenso o mais rápido
+						possível</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form6">
+					<br>6) Ao expor seu ponto de vista sobre um determinado assunto, você se considera convincente a
+					ponto de
+					mudar a opinião das pessoas?<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="t" id="a6" required /> A) Sim</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="f" id="b6" /> B) Não</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form7">
+					<br>7) Ao escolher uma possível solução para um problema, você geralmente:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="s" id="a7" required /> A) Escolhe uma saída já
+						experimentada</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="n" id="b7" /> B) Tenta um novo caminho</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form8">
+					<br>8) Se tivesse que falar sobre um assunto que você domina para um grupo com mais de 50
+					pessoas,
+					você:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="e" id="a8" required /> A) Permaneceria tranquilo,
+						quase
+						como
+						se
+						estivesse conversando com uma só pessoa</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="b8" /> B) Ficaria nervoso</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form9">
+					<br>9) Se pudesse escolher livremente um horário de trabalho, você optaria por:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="j" id="a9" required /> A) Horários fixos de entrada,
+						almoço e
+						saída</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="p" id="b9" /> B) Horários flexíveis que resultassem na
+						mesma
+						carga diária de trabalho</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form10">
+					<br>10) Com relação ao futuro, você:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="j" id="a10" required /> A) Costuma definir planos de
+						longo
+						prazo (anos)
+						e persegue as etapas para alcançá-las</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="p" id="b10" /> B) Planeja mais o futuro imediato
+						(meses à
+						frente) e deixa as coisas irem acontecendo a partir daí</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form11">
+					<br>11) Ao defender uma ideia em público, você costuma:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="a11" required /> A) Pensar bastante antes de
+						falar</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="e" id="b11" /> B) Ir pensando enquanto fala</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form12">
+					<br>12) No trabalho, você prefere:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="e" id="a12" required /> A) Avançar em várias tarefas
+						ao
+						mesmo
+						tempo</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="b12" /> B) Concentrar-se em uma tarefa até
+						concluí-la</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form13">
+					<br>13) O que mais o faz admirar uma pessoa?<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="n" id="a13" required /> A) Criatividade</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="s" id="b13" /> B) Sensatez</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form14">
+					<br>14) Quando precisa avaliar uma alternativa, você:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="t" id="a14" required /> A) Avalia os prós e contras
+						com o
+						mesmo empenho
+						para chegar a uma conclusão</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="f" id="b14" /> B) Tende a olhar mais para as vantagens
+						e
+						relegar as desvantagens a segundo plano</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form15">
+					<br>15) Numa mesa de bar com sete ou oito amigos que se conhecem bem, você costuma:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="e" id="a15" required /> A) Ser um dos que mais
+						falam</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="b15" /> B) Ser um dos que menos falam;</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form16">
+					<br>16) No ambiente de trabalho, você prefere:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="t" id="a16" required /> A) Dizer o que precisa ser
+						dito,
+						mesmo
+						que
+						magoe outra pessoa</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="f" id="b16" /> B) Evitar dizer coisas que possam
+						magoar a
+						outra pessoa</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form17">
+					<br>17) Ao dar exemplos, você costuma:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="s" id="a17" required /> A) Relatar situações que
+						ocorreram
+						de
+						fato</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="n" id="b17" /> B) Descrever situações
+						hipotéticas</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form18">
+					<br>18) Com relação a mudanças de cidade, você:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="p" id="a18" required /> A) Se empolga com o clima de
+						novidade
+						em torno
+						da mudança</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="j" id="b18" /> B) Se sente desconfortável e
+						inseguro</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form19">
+					<br>19) Você costuma ser mais convencido por informações transmitidas:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="t" id="a19" required /> A) De forma lógica e
+						organizada,
+						porém
+						fria</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="f" id="b19" /> B) Com entusiasmo, mesmo que sem tanta
+						organização</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form20">
+					<br>20) Com relação a prazos curtos para o cumprimento de uma tarefa, você:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="n" id="a20" required /> A) Se sente desconfortável e
+						não
+						gosta
+						da
+						situação</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="s" id="b20" /> B) Se sente desafiado e lida bem com a
+						situação</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form21">
+					<br>21) Você imagina que é mais vista como:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="f" id="a21" required /> A) Uma pessoa gentil e
+						aberta</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="t" id="b21" /> B) Uma pessoa de opiniões
+						fortes</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form22">
+					<br>22) Que tipo de pessoa lhe irritaria mais no convívio cotidiano?<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="s" id="a22" required /> A) A muito indecisa, aquela
+						que
+						cogita
+						várias
+						hipóteses e tem dificuldade para tomar a decisão</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="n" id="b22" /> B) A muito decidida, aquela que sabe
+						exatamente
+						que decisão tomar e sequer aceita sugestões</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form23">
+					<br>23) Quando você estipula metas:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="j" id="a23" required /> A) Faz o máximo possível para
+						cumpri-las e
+						normalmente consegue </label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="p" id="b23" /> B) Frequentemente abre mão delas em
+						função
+						de
+						outras prioridades que vão surgindo</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form24">
+					<br>24) Com relação à velocidade da sua fala:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="e" id="a24" required /> A) Tende a ser rápida, com
+						imediato
+						encadeamento de ideias</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="b24" /> B) Tende a ser devagar, com muitas
+						pausas
+						para
+						reflexão</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form25">
+					<br>25) Você considera que:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="j" id="a25" required /> A) Lei é lei e deve ser
+						cumprida
+						de
+						qualquer
+						forma</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="p" id="b25" /> B) As circunstâncias de eventual
+						descumprimento
+						de uma lei devem ser avaliadas e levadas em conta</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form26">
+					<br>26) Você se sentiria mais à vontade numa festa frequentada essencialmente por:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="n" id="a26" required /> A) Publicitários</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="s" id="b26" /> B) Engenheiros</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form27">
+					<br>27) Quando marca um compromisso, você:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="p" id="a27" required /> A) Raramente chega no
+						horário</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="j" id="b27" /> B) Raramente se atrasa</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form28">
+					<br>28) Quando você toma uma decisão:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="j" id="a28" required /> A) Quase nunca volta
+						atrás</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="p" id="b28" /> B) Frequentemente volta atrás</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form29">
+					<br>29) Ao avaliar situações e pessoas, você prioriza:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="t" id="a29" required /> A) O seu senso de
+						justiça</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="f" id="b29" /> B) O seu sentimento de compreensão e
+						compaixão</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form30">
+					<br>30) Você se sentiria mais satisfesito se fosse considerado:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="t" id="a30" required /> A) Extremamente
+						racional</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="f" id="b30" /> B) Extremamente sentimental</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form31">
+					<br>31) Para você, o que é mais importante na relação com um colega de trabalho?<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="f" id="a31" required /> A) A empatia entre
+						vocês</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="t" id="b31" /> B) Ter plena confiança na capacidade
+						profissional dele</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form32">
+					<br>32) Em uma entrevista de emprego, você:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="e" id="a32" required /> A) Não encontra dificuldades
+						para
+						falar das
+						próprias virtudes</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="b32" /> B) Se sente constrangido e tem
+						dificuldades
+						para falar das próprias virtudes</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form33">
+					<br>33) Qual seu ambiente de trabalho preferido?<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="a33" required /> A) Silencioso, com poucas
+						interações
+						com outras
+						pessoas</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="e" id="b33" /> B) Barulhento, com muitas interações
+						com
+						outras
+						pessoas</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form34">
+					<br>34) Ao sair de um ambiente que acabou de conhecer, você:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="s" id="a34" required /> A) É capaz de descrever os
+						detalhes</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="n" id="b34" /> B) Consegue fazer uma boa descrição
+						genérica,
+						sem muitos detalhes</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form35">
+					<br>35) Ao acordar, você prefere a ideia de que seu dia:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="p" id="a35" required /> A) Terá algum imprevisto, um
+						acontecimento que
+						mude a rotina</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="j" id="b35" /> B) Transcorrerá exatamente conforme o
+						rotineiro
+						e planejado</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form36">
+					<br>36) No cotidiano (ao se relacionar com outras pessoas, no ambiente de trabalho, ao ver um
+					filme,
+					etc),
+					você recorre mais:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="f" id="a36" required /> A) Ao elogio</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="t" id="b36" /> B) À crítica</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form37">
+					<br>37) Nos ambientes de trabalho pelos quais passou, você:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="e" id="a37" required /> A) Fez muitas amizades
+						pessoais a
+						ponto de
+						frequentar a casa do outros e conhecer seus familiares</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="b37" /> B) Fez poucas amizades pessoais</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form38">
+					<br>38) Ao avaliar uma situação, você:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="s" id="a38" required /> A) Presta atenção
+						essencialmente
+						ao
+						que é real,
+						palpável</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="n" id="b38" /> B) Leva em conta o sexto sentido,
+						aquilo
+						que
+						não é tão palpável</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form39">
+					<br>39) Ao se mudar para um novo prédio ou bairro, você:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="e" id="a39" required /> A) Cria situações de
+						aproximação
+						com
+						os
+						vizinhos</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="b39" /> B) Espera a aproximação ocorrer
+						naturalmente</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form40">
+					<br>40) Em trabalhos de ficção, como filmes e livros, você se identifica mais com:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="t" id="a40" required /> A) Um personagem que usa a
+						lógica
+						e a
+						inteligência para colocar na cadeia o responsável por um crime que lhe tenha prejudicado</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="f" id="b40" /> B) Um personagem que age levado pela
+						emoção
+						e
+						se vinga diretamente do criminoso</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form41">
+					<br>41) Ao planejar a compra de um carro novo, você tende a:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="j" id="a41" required /> A) Escolher de antemão o
+						modelo ou
+						marca e a
+						partir daí procurar o melhor preço e condições de pagamento</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="p" id="b41" /> B) Levar em conta diferentes modelos e
+						marcas
+						ao pesquisar preços e condições de pagamento</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form42">
+					<br>42) Ao receber uma tarefa iniciada por outra pessoa, mas que esteja longe ainda de ser
+					concluída
+					(organizar um fichário, por exemplo), você:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="s" id="a42" required /> A) Tenta ao máximo entender o
+						que
+						já
+						foi feito
+						para seguir a partir dali</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="n" id="b42" /> B) Prefere ter liberdade para definir
+						sua
+						própria estratégia e começar do zero</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form43">
+					<br>43) Você se sente mais incomodado quando:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="j" id="a43" required /> A) Tem uma lista grande de
+						tarefas
+						a
+						realizar</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="p" id="b43" /> B) Consegue zerar a lista de tarefas a
+						realizar</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form44">
+					<br>44) Que definição combina melhor com você?<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="p" id="a44" required="required" /> A) Maleável e com
+						facilidade para se
+						adaptar</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="j" id="b44" /> B) Organizado e metódico</label>
+
+				</form>
+				<br>
+				<br>
+				<br>
+				<button class="button-tipologico" type="button" onclick="validarForm()">Enviar resultado</button>
+				<br>
+			</div>
+		</div>
+
+		<p id="total"></p>
+		<p id="resultado"></p>
+
+		<!-- Fecha Formulário -->
+	</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"
+		integrity="sha512-oUUeA7VTcWBqUJD/VYCBB4VeIE0g1pg5aRMiSUOMGnNNeCLRS39OlkcyyeJ0hYx2h3zxmIWhyKiUXKkfZ5Wryg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js" defer></script>
+	<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-firestore.js" defer></script>
+	<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-database.js" defer></script>
+	<script src="js/tipologico.js" defer></script>
+</body>
+
+</html>

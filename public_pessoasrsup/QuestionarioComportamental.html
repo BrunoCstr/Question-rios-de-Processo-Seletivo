@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Questionário de Avaliação Comportamental</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="manifest" href="images/site.webmanifest">
+	<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<style>
+	body {
+		margin: 0;
+		padding: 0;
+		background-image: url('images/Fundo_do_CRUD.jpg');
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		position: relative;
+	}
+
+	.overlay {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.6);
+		z-index: -1;
+	}
+</style>
+
+<body>
+	<div class="overlay-preloader"></div>
+	<div class="preloader">
+		<div class="preloader-logo">
+			<svg id="asas-rsup" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+				width="100" height="80" viewBox="0 -50 1910.909 1732.49">
+				<defs>
+					<linearGradient id="linear-gradient" x1="1.275" y1="-1.232" x2="0" y2="1"
+						gradientUnits="objectBoundingBox">
+						<stop offset="0" stop-color="#0077c8" />
+						<stop offset="0.502" stop-color="#00a9e0" />
+						<stop offset="1" stop-color="#5bc2e7" />
+					</linearGradient>
+				</defs>
+				<g id="Group_7" data-name="Group 7" style="isolation: isolate">
+					<path id="Path_1" data-name="Path 1"
+						d="M451.163,1181.173A172.331,172.331,0,0,1,278.832,1353.5H139.447A139.416,139.416,0,0,0,.031,1492.92v139.57H172.362c154.08,0,278.985-124.907,278.985-278.986h-.185a172.331,172.331,0,0,1,172.33-172.331L730,1181.162c290.31,0,556.154-104.757,761.791-278.532L730,902.336c-154,0-278.837,124.84-278.837,278.837"
+						stroke="url(#linear-gradient)" fill="none" stroke-width="40" />
+					<path id="Path_2" data-name="Path 2"
+						d="M451.174,727.432c-.869,96.2-76.847,174.9-173.05,174.9H139.447A139.416,139.416,0,0,0,.031,1041.753L0,1181.322H172.2c154.08,0,278.985-124.907,278.985-278.986l-.024.294A172.331,172.331,0,0,1,623.492,730.3l779.964-.107c181.685-.024,347.013-108.044,416.943-275.731q.63-1.508,1.254-3.018L730,451.168c-153.139,0-277.444,123.451-278.826,276.264"
+						stroke="url(#linear-gradient)" fill="none" stroke-width="40" />
+					<path id="Path_3" data-name="Path 3"
+						d="M730,0C576.861,0,452.556,123.451,451.174,276.264c-.869,96.2-76.847,174.9-173.05,174.9H139.447A139.415,139.415,0,0,0,.031,590.584L0,730.154H172.2c154.08,0,278.985-124.907,278.985-278.986h-.024a172.331,172.331,0,0,1,172.33-172.331l1009.322,0c152.656,0,277.728-123.052,278.092-275.707q0-1.438,0-2.878Z"
+						stroke="url(#linear-gradient)" fill="none" stroke-width="40" />
+				</g>
+			</svg>
+		</div>
+	</div>
+	<div class="overlay"></div>
+	<div class="container-form-comportamental">
+		</form>
+		<div id="targetDiv">
+			<br>
+			<h1 class="h1-title" style="font-family: prometo;">Questionário de Avaliação Comportamental</h1>
+			<img class="logo-comportamental" src="images/logo-branca-azul.png" width="150px">
+			<br>
+			<div class="form-texto">
+				<form name="form1">
+					1) Eu sou:
+					<br /><br />
+					<label>
+						<input type="radio" class="option-input" name="questao" value="i" id="a1" /> A) Idealista,
+						criativo e
+						visionário</label>
+					<br>
+					<label>
+						<input type="radio" class="option-input" name="questao" value="c" id="b1" /> B) Divertido,
+						espiritual e
+						benéfico</label>
+					<br>
+					<label>
+						<input type="radio" class="option-input" name="questao" value="o" id="c1" /> C) Confiável,
+						meticuloso e
+						previsível</label>
+					<br>
+					<label>
+						<input type="radio" class="option-input" name="questao" value="a" id="d1" /> D) Focado,
+						determinado e
+						persistente</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form2">
+					<br />
+					2) Eu gosto de:
+					<br /><br />
+					<label>
+						<input type="radio" name="questao" value="a" id="a2" /> A) Ser piloto</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="c" id="b2" /> B) Conversar com os passageiros</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="o" id="c2" /> C) Planejar a viagem</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="d2" /> D) Explorar novas rotas</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form3">
+					<br />
+					3) Se você quiser se dar bem comigo:
+					<br /><br />
+					<label>
+						<input type="radio" name="questao" value="i" id="a3" /> A) Me dê liberdade</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="o" id="b3" /> B) Me deixe saber sua
+						expectativa</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="a" id="c3" /> C) Lidere, siga ou saia do
+						caminho</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="c" id="d3" /> D) Seja amigável, carinhoso e
+						compreensivo</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form4">
+					<br />
+					4) Para conseguir obter bons resultados é preciso:
+					<br /><br />
+
+					<label>
+						<input type="radio" name="questao" value="i" id="a4" /> A) Ter incertezas</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="o" id="b4" /> B) Controlar o essencial</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="c" id="c4" /> C) Diversão e celebração</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="a" id="d4" /> D) Planejar e obter recursos</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form5">
+					<br />
+					5) Eu me divirto quando:
+					<br /><br />
+					<label>
+						<input type="radio" name="questao" value="a" id="a5" /> A) Estou me exercitando</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="b5" /> B) Tenho novidades</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="c" id="c5" /> C) Estou com os outros</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="o" id="d5" /> D) Determino as regras</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form6">
+					<br />
+					6) Eu penso que:
+					<br /><br />
+					<label>
+						<input type="radio" name="questao" value="c" id="a6" /> A) Unidos venceremos, divididos
+						perderemos</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="a" id="b6" /> B) O ataque é melhor que a
+						defesa</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="c6" /> C) É bom ser manso, mas andar com um
+						porrete</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="o" id="d6" /> D) Um homem prevenido vale por
+						dois</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form7">
+					<br />
+					7) Minha preocupação é:
+					<br /><br />
+					<label>
+						<input type="radio" name="questao" value="i" id="a7" /> A) Gerar a ideia global</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="c" id="b7" /> B) Fazer com que as pessoas
+						gostem</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="o" id="c7" /> C) Fazer com que funcione</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="a" id="d7" /> D) Fazer com que aconteça</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form8">
+					<br />
+					8) Eu prefiro:
+					<br /><br />
+					<label>
+						<input type="radio" name="questao" value="i" id="a8" /> A) Perguntas a respostas</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="o" id="b8" /> B) Ter todos os detalhes</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="a" id="c8" /> C) Vantagens a meu favor</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="c" id="d8" /> D) Que todos tenham a chance de serem
+						ouvidos</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form9">
+					<br />
+					9) Eu gosto de:
+					<br /><br />
+					<label>
+						<input type="radio" name="questao" value="a" id="a9" /> A) Fazer progresso</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="b9" /> B) Construir memórias</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="o" id="c9" /> C) Fazer sentido</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="c" id="d9" /> D) Tornar as pessoas
+						confortáveis</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form10">
+					<br />
+					10) Eu gosto de chegar:
+					<br /><br />
+					<label>
+						<input type="radio" name="questao" value="a" id="a10" /> A) Na frente</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="c" id="b10" /> B) Junto</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="o" id="c10" /> C) Na hora</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="d10" /> D) Em outro lugar</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form11">
+					<br />
+					11) Um ótimo dia pra mim é quando:
+					<br><br />
+					<label>
+						<input type="radio" name="questao" value="a" id="a11" /> A) Consigo fazer muitas coisas</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="c" id="b11" /> B) Me divirto com meus amigos</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="o" id="c11" /> C) Tudo segue conforme
+						planejado</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="d11" /> D) Desfruto de coisas novas e
+						estimulantes</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form12">
+					<br>12) Eu vejo a morte como:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="c" id="a12" /> A) Uma grande aventura
+						misteriosa</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="c" id="b12" /> B) Oportunidade para rever os
+						falecidos</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="o" id="c12" /> C) Um modo de receber
+						recompensas</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="a" id="d12" /> D) Algo que sempre chega muito
+						cedo</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form13">
+					<br>13) Minha filosofia de vida é:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="a" id="a13" /> A) Há ganhadores e perdedores, e eu
+						acredito
+						ser um ganhador</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="c" id="b13" /> B) Para eu ganhar, ninguém precisa
+						perder</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="o" id="c13" /> C) Para ganhar, é preciso seguir as
+						regras</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="d13" /> D) Para ganhar, é necessário inventar
+						novas
+						regras</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form14">
+					<br>14) Eu sempre gostei de:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="a14" /> A) Explorar</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="o" id="b14" /> B) Evitar surpresas</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="a" id="c14" /> C) Focalizar a meta</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="c" id="d14" /> D) Realizar uma abordagem
+						natural</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form15">
+					<br>15) Eu gosto de mudanças se:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="a" id="a15" /> A) Me der uma vantagem
+						competitiva</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="c" id="b15" /> B) For divertido e puder ser
+						compartilhado</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="c15" /> C) Me der mais liberdade e
+						variedade</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="o" id="d15" /> D) Melhorar ou me der mais
+						controle</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form16">
+					<br>16) Não existe nada de errado em:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="a" id="a16" /> A) Se colocar na frente</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="c" id="b16" /> B) Colocar os outros na frente</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="c16" /> C) Mudar de ideia</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="o" id="d16" /> D) Ser consistente</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form17">
+					<br>17) Eu gosto de buscar conselhos de:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="a" id="a17" /> A) Pessoas bem sucedidas</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="c" id="b17" /> B) Anciões e conselheiros</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="o" id="c17" /> C) Autoridades no assunto</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="d17" /> D) Lugares, os mais estranhos</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form18">
+					<br>18) Meu lema é:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="a18" /> A) Fazer o que precisa ser
+						feito</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="o" id="b18" /> B) Fazer bem feito</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="c" id="c18" /> C) Fazer junto com o grupo</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="a" id="d18" /> D) Simplesmente fazer</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form19">
+					<br>19) Eu gosto de:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="a19" /> A) Complexidade, mesmo se
+						confuso</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="o" id="b19" /> B) Ordem e sistematização</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="c" id="c19" /> C) Calor humano e animação</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="a" id="d19" /> D) Coisas claras e simples</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form20">
+					<br>20) Tempo para mim é:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="a" id="a20" /> A) Algo que detesto desperdiçar</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="c" id="b20" /> B) Um grande ciclo</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="o" id="c20" /> C) Uma flecha que leva ao
+						inevitável</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="d20" /> D) Irrelevante</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form21">
+					<br>21) Se eu fosse bilionário:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="c" id="a21" /> A) Faria doações para muitas
+						entidades</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="o" id="b21" /> B) Criaria uma poupança
+						avantajada</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="c21" /> C) Faria o que desse na cabeça</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="a" id="d21" /> D) Me exibiria bastante para algumas
+						pessoas</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form22">
+					<br>22) Eu acredito que:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="a" id="a22" /> A) O destino é mais importante que a
+						jornada</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="c" id="b22" /> B) A jornada é mais importante que o
+						destino</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="o" id="c22" /> C) Um centavo economizado é um centavo
+						ganho</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="d22" /> D) Bastam um navio e uma estrela para
+						navegar</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form23">
+					<br>23) Eu acredito também que:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="a" id="a23" /> A) Aquele que hesita está
+						perdido</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="o" id="b23" /> B) De grão em grão a galinha enche o
+						papo</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="c" id="c23" /> C) O que vai, volta</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="d23" /> D) Um sorriso ou uma careta é o mesmo
+						para quem
+						é cego</label>
+					<br>
+					<br>
+				</form>
+
+				<form name="form24">
+					<br>24) Eu acredito ainda que:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="o" id="a24" /> A) É melhor prudência do que
+						arrependimento</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="b24" /> B) A autoridade deve ser
+						desafiada</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="a" id="c24" /> C) Ganhar é fundamental</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="c" id="d24" /> D) O coletivo é mais importante do que
+						o
+						individual</label>
+					<br>
+					<br>
+				</form>
+				<form name="form25">
+					<br>25) Eu penso que:<br>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="i" id="a25" /> A) Não é fácil ficar
+						encurralado</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="o" id="b25" /> B) É preferível olhar, antes de
+						pular</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="a" id="c25" /> C) Duas cabeças pensam melhor do que
+						uma</label>
+					<br>
+					<label>
+						<input type="radio" name="questao" value="c" id="d25" /> D) Se você não tem condições de
+						competir, não
+						compita</label>
+					<br>
+					<br>
+					<br>
+				</form>
+				<button type="button" class="button-comportamental" onclick="validarForm()">Ir para o próximo</button>
+				<br>
+			</div>
+		</div>
+	</div>
+	<p id="resultado"></p>
+
+	<!-- Fim do Formulário -->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"
+        integrity="sha512-oUUeA7VTcWBqUJD/VYCBB4VeIE0g1pg5aRMiSUOMGnNNeCLRS39OlkcyyeJ0hYx2h3zxmIWhyKiUXKkfZ5Wryg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js" defer></script>
+	<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-firestore.js" defer></script>
+	<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-database.js" defer></script>
+	<script src="js/comportamental.js" defer></script>
+</body>
+
+</html>

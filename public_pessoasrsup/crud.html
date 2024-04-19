@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+  <title>Gerenciamento de Unidade</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/crud.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
+  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-firestore.js"></script>
+</head>
+
+<body>
+  <header>
+    <img id="logo" src="images/icone-branco.png" width="50px" />
+    <h2 id="title-CRUD">RSup! CRUD Dashboard</h2>
+  </header>
+  <br>
+  <div class="container">
+    <div class="header">
+      <span class="tittle-cadastro">Gerenciamento de Unidade</span>
+      <button onclick="openModal()" id="new">Cadastrar</i></button>
+    </div>
+
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th id="th-editar" class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <form>
+          <label for="m-nome">Nome</label>
+          <input id="m-nome" type="text" required />
+
+          <label for="m-email">E-mail</label>
+          <input id="m-email" type="text" required />
+
+          <button id="btnSalvar" type="button" onclick="saveUnidade()">Cadastrar</button>
+        </form>
+      </div>
+    </div>
+    <div class="modal-container" id="editModal">
+      <div class="modal">
+        <form>
+          <label for="m-nome-edit">Nome</label>
+          <input id="m-nome-edit" type="text" required />
+
+          <label for="m-email-edit">E-mail</label>
+          <input id="m-email-edit" type="text" required />
+
+          <button id="btnSalvarEdit" type="button" onclick="saveUnidadeEdit()">Salvar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="js/crud.js"></script>
+</body>
+
+</html>

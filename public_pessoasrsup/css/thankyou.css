@@ -1,0 +1,137 @@
+@font-face {
+    font-family: Prometo;
+    src: url('../font/Prometo.ttf');
+    src: url('../font/Prometo.eot');
+    src: url('../font/Prometo.woff');
+}
+
+.container-menu {
+    padding-right: 45px;
+    padding-left: 45px;
+    margin: auto;
+    width: 90%;
+    max-width: 780px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Prometo;
+    color: gray;
+    height: 70%;
+    border-radius: 10px;
+    border: solid 1px;
+    backdrop-filter: blur(10px);
+}
+
+.logo-ty {
+    position: absolute;
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 250px;
+}
+
+.title-ty {
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 40px;
+    /* Ajusta o espaçamento inferior conforme necessário */
+}
+
+.social-media {
+    position: absolute;
+    margin-top: 20px;
+    margin-bottom: -200px;
+    /* Ajusta o espaçamento superior conforme necessário */
+}
+
+.youtube {
+    width: 50px;
+    margin: 0 10px;
+}
+
+.instagram,
+.spotify {
+    width: 40px;
+    margin: 0 10px;
+}
+
+
+/*Responsividade*/
+
+@media screen and (max-width: 900px) {
+    .container-menu {
+        width: 580px
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container-menu {
+        width: 480px
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container-menu {
+        width: 400px
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .container-menu {
+        width: 300px;
+    }
+
+    .logo-ty {
+        width: 180px;
+    }
+
+    .title-ty {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container-menu {
+        width: 250px;
+    }
+
+    .logo-ty {
+        width: 170px;
+    }
+
+    .title-ty {
+        font-size: 30px;
+    }
+
+    .youtube {
+        width: 45px;
+        margin-bottom: 1px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .instagram,
+    .spotify {
+        width: 37px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .container-menu {
+        width: 235px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container-menu {
+        width: 215px;
+    }
+
+    .logo-ty {
+        width: 120px;
+        margin-top: 50px;
+    }
+}

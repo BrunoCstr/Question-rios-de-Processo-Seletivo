@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bem Vindo!</title>
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    body,
+    html {
+        background-image: url('images/Fundo-padrão.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        font-family: Prometo;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-position: center center;
+    }
+
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+</style>
+
+<body>
+    <div class="overlay-preloader"></div>
+    <div class="preloader">
+        <div class="preloader-logo">
+            <svg id="asas-rsup" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="100" height="80" viewBox="0 -50 1910.909 1732.49">
+                <defs>
+                    <linearGradient id="linear-gradient" x1="1.275" y1="-1.232" x2="0" y2="1"
+                        gradientUnits="objectBoundingBox">
+                        <stop offset="0" stop-color="#0077c8" />
+                        <stop offset="0.502" stop-color="#00a9e0" />
+                        <stop offset="1" stop-color="#5bc2e7" />
+                    </linearGradient>
+                </defs>
+                <g id="Group_7" data-name="Group 7" style="isolation: isolate">
+                    <path id="Path_1" data-name="Path 1"
+                        d="M451.163,1181.173A172.331,172.331,0,0,1,278.832,1353.5H139.447A139.416,139.416,0,0,0,.031,1492.92v139.57H172.362c154.08,0,278.985-124.907,278.985-278.986h-.185a172.331,172.331,0,0,1,172.33-172.331L730,1181.162c290.31,0,556.154-104.757,761.791-278.532L730,902.336c-154,0-278.837,124.84-278.837,278.837"
+                        stroke="url(#linear-gradient)" fill="none" stroke-width="40" />
+                    <path id="Path_2" data-name="Path 2"
+                        d="M451.174,727.432c-.869,96.2-76.847,174.9-173.05,174.9H139.447A139.416,139.416,0,0,0,.031,1041.753L0,1181.322H172.2c154.08,0,278.985-124.907,278.985-278.986l-.024.294A172.331,172.331,0,0,1,623.492,730.3l779.964-.107c181.685-.024,347.013-108.044,416.943-275.731q.63-1.508,1.254-3.018L730,451.168c-153.139,0-277.444,123.451-278.826,276.264"
+                        stroke="url(#linear-gradient)" fill="none" stroke-width="40" />
+                    <path id="Path_3" data-name="Path 3"
+                        d="M730,0C576.861,0,452.556,123.451,451.174,276.264c-.869,96.2-76.847,174.9-173.05,174.9H139.447A139.415,139.415,0,0,0,.031,590.584L0,730.154H172.2c154.08,0,278.985-124.907,278.985-278.986h-.024a172.331,172.331,0,0,1,172.33-172.331l1009.322,0c152.656,0,277.728-123.052,278.092-275.707q0-1.438,0-2.878Z"
+                        stroke="url(#linear-gradient)" fill="none" stroke-width="40" />
+                </g>
+            </svg>
+        </div>
+    </div>
+    <div class="container-menu">
+        <div class="logo">
+            <img src="images/logo-branca-azul.png" width="150px">
+        </div>
+        <div class="texto-principal">
+
+            <h3 style="color: #ff3d00">Parabéns por chegar até aqui!</h3>
+
+            <p>Nesta fase, estamos oferecendo duas ferramentas incríveis de autoconhecimento.</p>
+
+            <p>Nosso foco é conhecer a <b style="color: #ff3d00">PESSOA</b> que está em busca de oportunidade, é muito
+                importante para nós te
+                conhecermos melhor e entendermos se você combina com a nossa cultura.</p>
+
+            <p>As ferramentas são simples.</p>
+
+            <p>Aqui estão algumas instruções rápidas:</p>
+
+            <p>
+                • Encontre um local tranquilo para se concentrar.
+                <br>
+                • Responda às perguntas rapidamente, no máximo em 5 segundos. Escolha a primeira opção que vier à mente,
+                sem pensar muito, demonstrando sinceridade.
+            </p>
+
+            <p><b style="color: #ff3d00">Buscamos por pessoas que tenham paixão pela evolução</b> e que querem nos
+                ajudar
+                a construir projetos
+                incríveis e contribuir com a transformação no mundo dos seguros.</p>
+
+            <p>Boa sorte, esperamos te encontrar em breve.</p>
+        </div>
+        <div class="positionbtn">
+            <button class="index-button" target="blank" onclick="Cadastro()">Faça o teste
+                agora!</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"
+        integrity="sha512-oUUeA7VTcWBqUJD/VYCBB4VeIE0g1pg5aRMiSUOMGnNNeCLRS39OlkcyyeJ0hYx2h3zxmIWhyKiUXKkfZ5Wryg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-database.js"></script>
+    <title>Cadastro</title>
+</head>
+<style>
+    body,
+    html {
+        background-image: url('images/Fundo_do_login.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+</style>
+
+<body>
+    <div class="overlay-preloader"></div>
+    <div class="preloader">
+        <div class="preloader-logo">
+            <svg id="asas-rsup" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="100" height="80" viewBox="0 -50 1910.909 1732.49">
+                <defs>
+                    <linearGradient id="linear-gradient" x1="1.275" y1="-1.232" x2="0" y2="1"
+                        gradientUnits="objectBoundingBox">
+                        <stop offset="0" stop-color="#0077c8" />
+                        <stop offset="0.502" stop-color="#00a9e0" />
+                        <stop offset="1" stop-color="#5bc2e7" />
+                    </linearGradient>
+                </defs>
+                <g id="Group_7" data-name="Group 7" style="isolation: isolate">
+                    <path id="Path_1" data-name="Path 1"
+                        d="M451.163,1181.173A172.331,172.331,0,0,1,278.832,1353.5H139.447A139.416,139.416,0,0,0,.031,1492.92v139.57H172.362c154.08,0,278.985-124.907,278.985-278.986h-.185a172.331,172.331,0,0,1,172.33-172.331L730,1181.162c290.31,0,556.154-104.757,761.791-278.532L730,902.336c-154,0-278.837,124.84-278.837,278.837"
+                        stroke="url(#linear-gradient)" fill="none" stroke-width="40" />
+                    <path id="Path_2" data-name="Path 2"
+                        d="M451.174,727.432c-.869,96.2-76.847,174.9-173.05,174.9H139.447A139.416,139.416,0,0,0,.031,1041.753L0,1181.322H172.2c154.08,0,278.985-124.907,278.985-278.986l-.024.294A172.331,172.331,0,0,1,623.492,730.3l779.964-.107c181.685-.024,347.013-108.044,416.943-275.731q.63-1.508,1.254-3.018L730,451.168c-153.139,0-277.444,123.451-278.826,276.264"
+                        stroke="url(#linear-gradient)" fill="none" stroke-width="40" />
+                    <path id="Path_3" data-name="Path 3"
+                        d="M730,0C576.861,0,452.556,123.451,451.174,276.264c-.869,96.2-76.847,174.9-173.05,174.9H139.447A139.415,139.415,0,0,0,.031,590.584L0,730.154H172.2c154.08,0,278.985-124.907,278.985-278.986h-.024a172.331,172.331,0,0,1,172.33-172.331l1009.322,0c152.656,0,277.728-123.052,278.092-275.707q0-1.438,0-2.878Z"
+                        stroke="url(#linear-gradient)" fill="none" stroke-width="40" />
+                </g>
+            </svg>
+        </div>
+    </div>
+    <div class="container-login">
+        <h1>Seus dados</h1>
+        <div class="form" id="form">
+            <div id="msgSuccess"></div>
+            <div id="msgError"></div>
+            <br>
+            <label id="labelUnidade">Selecione uma unidade:</label>
+            <br>
+            <select type="text" list="unidade-list" name="unidade" id="inputUnidade" class="campodados"
+                required></select>
+            <br>
+            <br>
+            <label id="labelNome">Nome</label>
+            <input type="text" name="nome" id="inputNome" class="campodados" required />
+            <br>
+            <br>
+            <label id="labelEmail">E-mail</label>
+            <input type="email" name="email" id="inputEmail" class="campodados" required />
+        </div>
+        <br>
+        <br>
+        <button type="button" class="index-button" onclick="validation()">Começar</button>
+    </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"
+        integrity="sha512-oUUeA7VTcWBqUJD/VYCBB4VeIE0g1pg5aRMiSUOMGnNNeCLRS39OlkcyyeJ0hYx2h3zxmIWhyKiUXKkfZ5Wryg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/cadastro.js"></script>
+</body>
+
+</html>

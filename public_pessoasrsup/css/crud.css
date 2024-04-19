@@ -1,0 +1,426 @@
+@font-face {
+  font-family: Prometo;
+  src: url('../font/Prometo.ttf');
+  src: url('../font/Prometo.eot');
+  src: url('../font/Prometo.woff');
+}
+
+#logo {
+  position: absolute;
+  top: 15px;
+  left: 50px;
+  height: auto;
+}
+
+#title-CRUD {
+  position: absolute;
+  top: 18px;
+  left: 110px;
+  height: auto;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Prometo', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(140deg, #002794, black , #ff3d00);
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 93%;
+  height: 85%;
+  margin-top: 30px;
+  border-radius: 10px;
+  background: white;
+}
+
+.header {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto 12px;
+}
+
+.header span {
+  font-weight: 900;
+  font-size: 25px;
+  word-break: break-all;
+  color: #2760ff;
+}
+
+#new {
+  font-size: 14px;
+  padding: 8px 18px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #2760ff;
+
+  border: 1px none #2760ff;
+  border-radius: 6px;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  font-family: Prometo, sans-serif;
+  cursor: pointer;
+  margin: 0 10px
+}
+
+#new:hover,
+#botaoEditar:hover {
+  background-color: deepskyblue;
+  box-shadow: 3px 3px 0px 0px #2980b9;
+  transform: translateY(2px);
+}
+
+.divTable {
+  padding: 10px;
+  width: auto;
+  height: inherit;
+  overflow: auto;
+}
+
+.divTable::-webkit-scrollbar {
+  width: 12px;
+  background-color: whitesmoke;
+}
+
+.divTable::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: darkgray;
+}
+
+table {
+  width: 100%;
+  border-spacing: 10px;
+  word-break: break-all;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: whitesmoke;
+}
+
+tr {
+  border-bottom: 1px solid rgb(238, 235, 235) !important;
+}
+
+tbody tr td {
+  vertical-align: text-top;
+  padding: 6px;
+  max-width: 50px;
+}
+
+thead tr th {
+  padding: 5px;
+  text-align: start;
+  margin-bottom: 50px;
+}
+
+tbody tr {
+  margin-bottom: 50px;
+}
+
+thead tr th.acao {
+  width: 100px !important;
+  text-align: center;
+}
+
+tbody tr td.acao {
+  text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 360px) {
+
+  #logo {
+    position: absolute;
+    width: 100px;
+    margin-top: 5px;
+  }
+
+  body {
+    font-size: 10px;
+  }
+
+  .header span {
+    font-size: 15px;
+    white-space: nowrap;
+  }
+
+  #new {
+    padding: 6px 10px;
+    font-size: 20px;
+  }
+
+  #btnSalvarEdit {
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+
+  #btnSalvar {
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+
+  #botaoVoltar {
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+
+  #btn-responsivo {
+    font-size: 9px;
+    white-space: nowrap;
+  }
+
+  thead tr th.acao {
+    width: auto !important;
+  }
+
+  td button i {
+    font-size: 20px !important;
+  }
+
+  td button i:first-child {
+    margin-right: 0;
+  }
+
+  .modal {
+    width: 90% !important;
+  }
+
+  .modal label {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  #logo {
+    position: absolute;
+    top: -11px;
+  }
+
+  body {
+    font-size: 10px;
+  }
+
+  .header span {
+    font-size: 15px;
+  }
+
+  #new {
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+
+  #btnSalvarEdit {
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+
+  #btnSalvar {
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+
+  #botaoVoltar {
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+
+  #btn-responsivo {
+    font-size: 9px;
+  }
+
+  thead tr th.acao {
+    width: auto !important;
+  }
+
+  td button i {
+    font-size: 20px !important;
+  }
+
+  td button i:first-child {
+    margin-right: 0;
+  }
+
+  .modal {
+    width: 90% !important;
+  }
+
+  .modal label {
+    font-size: 12px !important;
+  }
+}
+
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.modal label {
+  font-size: 16px;
+  width: 100%;
+}
+
+.modal input {
+  width: 100%;
+  outline: none;
+  padding: 5px 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.modal button {
+  font-size: 14px;
+  padding: 8px 18px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #2760ff;
+  border: 1px none #2760ff;
+  border-radius: 6px;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  font-family: Prometo, sans-serif;
+  cursor: pointer;
+}
+
+.modal button:hover {
+  background-color: deepskyblue;
+  box-shadow: 3px 3px 0px 0px #2980b9;
+  transform: translateY(2px);
+}
+
+.active {
+  display: flex;
+}
+
+.active .modal {
+  animation: modal .4s;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+td button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+td button i {
+  font-size: 25px;
+}
+
+.bx-trash {
+  color: red;
+}
+
+td button i:first-child {
+  margin-right: 10px;
+}
+
+.botao-editar {
+  background-color: #2760ff;
+  border: 1px none #2760ff;
+  border-radius: 6px;
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  font-family: Prometo, sans-serif;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.botao-editar:hover {
+  background-color: deepskyblue;
+  box-shadow: 3px 3px 0px 0px #2980b9;
+  transform: translateY(2px);
+}
+
+.botao-excluir {
+  background-color: red;
+  border: 1px none red;
+  border-radius: 6px;
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  font-family: Prometo, sans-serif;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.botao-excluir:hover {
+  background-color: #FF6347;
+  box-shadow: 3px 3px 0px 0px red;
+  transform: translateY(2px);
+}
+
+.close-button {
+  position: absolute;
+  margin-left: 630px;
+  top: 275px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1920px) {
+  #logo {
+    left: 60px;
+  } 
+}
+
+@media screen and (max-width: 1600px) {
+  #logo {
+    left: 50px;
+  } 
+}
